@@ -72,9 +72,9 @@ GarageDoorState getGarageDoorState()
 void triggerDoor()
 {
 	iot->info("Triggering Garage Door Open");
-	digitalWrite(OPEN_SWTICH_PIN, LOW);
+	digitalWrite(OPEN_SWITCH_PIN, LOW);
 	delay(200);
-	digitalWrite(OPEN_SWTICH_PIN, HIGH);
+	digitalWrite(OPEN_SWITCH_PIN, HIGH);
 }
 
 void triggerLight()
@@ -94,12 +94,12 @@ void setup()
         .setMQTTClientId(GARAGE_DOOR_MQTT_CLIENT_ID)
 	    .initialize();
 
-	pinMode(OPEN_SWTICH_PIN, OUTPUT);
+	pinMode(OPEN_SWITCH_PIN, OUTPUT);
 	pinMode(LIGHT_SWITCH_PIN, OUTPUT);
 	pinMode(OPEN_SENSOR_PIN, INPUT_PULLUP);
 	pinMode(CLOSE_SENSOR_PIN, INPUT_PULLUP);
 
-	digitalWrite(OPEN_SWTICH_PIN, HIGH);
+	digitalWrite(OPEN_SWITCH_PIN, HIGH);
 	digitalWrite(LIGHT_SWITCH_PIN, HIGH);
 
 	if(iot->mqttActive()) {
