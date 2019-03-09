@@ -230,7 +230,7 @@ bool CoogleEEProm::readString(int startAddress, char *buffer, int bufSize)
 
 	if(!validAddress(startAddress)) {
 
-#ifdef COOGLEEPROM_DEBUG
+#ifdef COOGLEEEPROM_DEBUG
 		Serial.println("Failed to read from address, invalid address!");
 #endif
 
