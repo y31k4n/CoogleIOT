@@ -5,8 +5,8 @@
 
 #define OPEN_SENSOR_PIN 2   // The pin that detects when the door is closed
 #define CLOSE_SENSOR_PIN 5   // The pin that detects when the door is open
-#define OPEN_SWTICH_PIN 14    // The pin that activates the open / close door action
-#define LIGHT_SWTICH_PIN 4  // The pin that turns the light on / off
+#define OPEN_SWITCH_PIN 14    // The pin that activates the open / close door action
+#define LIGHT_SWITCH_PIN 4  // The pin that turns the light on / off
 
 #define GARAGE_DOOR_STATUS_TOPIC "/status/garage-door"
 #define GARAGE_DOOR_ACTION_TOPIC_DOOR "/garage-door/door"
